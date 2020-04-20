@@ -1,0 +1,29 @@
+@import "../mixins";
+@import "../variables";
+
+.catalogs__list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .clear-styles('ul');
+}
+
+.catalogs__item {
+  position: relative;
+  width: @mobile-content-width;
+  margin-bottom: 20px;
+  padding: 22px 20px;
+  background-color: @light-gray-color;
+}
+
+@media (min-width: 600px) {
+  .catalogs__list {
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .catalogs__item {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}

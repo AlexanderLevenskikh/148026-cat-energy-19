@@ -1,0 +1,97 @@
+@import '../mixins';
+@import '../variables';
+
+.burger-line() {
+  width: 25px;
+  height: 2px;
+  background: @black-color;
+}
+
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  .clear-styles('button');
+  padding: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: -38px;
+  right: 0;
+}
+
+.main-nav__burger {
+  .burger-line();
+  display: inline-block;
+  position: relative;
+  font-size: 0;
+  vertical-align: middle;
+  transition: background 10ms 100ms ease;
+
+  &::before,
+  &::after {
+    content: '';
+    transition: top 100ms 150ms ease,
+    transform 100ms 50ms ease;
+    position: absolute;
+    left: 0;
+    .burger-line();
+  }
+
+  &::after {
+    top: 7px;
+  }
+
+  &::before {
+    top: -7px;
+  }
+}
+
+.main-nav__toggle--opened .main-nav__burger {
+  background: transparent;
+
+    &::after, &::before {
+      transition: top 100ms 50ms ease,
+      transform 100ms 150ms ease;
+      top: 0;
+    }
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+}
+
+.main-nav__list {
+  display: none;
+  .clear-styles('ul');
+  padding-top: 15px;
+
+  &--opened {
+    display: block;
+  }
+}
+
+.main-nav__item {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid @gray-color;
+
+  &:last-child {
+    border-bottom: 1px solid @gray-color;
+  }
+}
+
+.main-nav__ref {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding: 24px 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: @black-color;
+  text-transform: uppercase;
+  text-decoration: none;
+}

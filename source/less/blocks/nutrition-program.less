@@ -1,0 +1,53 @@
+@import "../variables";
+
+.nutrition-program__cat-bg {
+  position: relative;
+  margin-bottom: 200px;
+  padding-bottom: 150px;
+  background-image: url(../../img/index-background-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nutrition-program__title {
+  margin: 0;
+  padding-top: 30px;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: normal;
+  text-align: center;
+  color: @white-color;
+}
+
+.nutrition-program__tagline {
+  line-height: 1;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @white-color;
+}
+
+.nutrition-program__image {
+  position: absolute;
+  left: 20px;
+  bottom: calc((40px - 100%) / 2);
+  width: @mobile-content-width;
+}
+
+.nutrition-program__href {
+  position: absolute;
+  bottom: -50%;
+  left: calc((100% - @mobile-content-width) / 2);
+}
+
+@media (min-width: 320px) {
+  .nutrition-program__cat-bg {
+    margin-bottom: calc(50% + 40px);
+    padding-bottom: calc(100% - 170px);
+    background-image: url(../../img/index-background-mobile@2x.jpg);
+  }
+
+  .nutrition-program__image {
+    width: calc(100% - 40px);
+  }
+}
