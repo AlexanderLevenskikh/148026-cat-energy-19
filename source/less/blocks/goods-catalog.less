@@ -1,0 +1,15 @@
+@import "../mixins";
+@import "../variables";
+
+.goods-catalog__list {
+  .clear-styles('ul');
+  display: flex;
+  flex-direction: column;
+}
+
+.goods-catalog__item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 25px;
+  border-bottom: 1px solid @dark-gray-color;
+}
