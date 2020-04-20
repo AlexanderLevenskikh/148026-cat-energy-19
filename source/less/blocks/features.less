@@ -2,7 +2,7 @@
 @import "../mixins";
 
 .features__list {
-  .clear-styles('ul');
+  .clear-styles("ul");
 }
 
 .features__title {
@@ -20,10 +20,10 @@
   min-height: @feature-square-size;
   margin: 20px;
   padding-left: @feature-square-size + 20px;
-  font-family: Arial, Tahoma, sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -34,28 +34,28 @@
 
 .features__item--leaf {
   &::before {
-    background: url(../../img/advantage-leaf@1x.png) no-repeat center,
-    linear-gradient(to right, @green-bg-color, @green-bg-color);
+    background: url("../../img/advantage-leaf@1x.png") no-repeat center,
+      linear-gradient(to right, @greenBgColor, @greenBgColor);
   }
 }
 
 .features__item--powder {
   &::before {
-    background: url(../../img/advantage-powder@1x.png) no-repeat center,
-    linear-gradient(to right, @green-bg-color, @green-bg-color);
+    background: url("../../img/advantage-powder@1x.png") no-repeat center,
+      linear-gradient(to right, @greenBgColor, @greenBgColor);
   }
 }
 
 .features__item--food-dining {
   &::before {
-    background: url(../../img/advantage-dining@1x.png) no-repeat center,
-    linear-gradient(to right, @green-bg-color, @green-bg-color);
+    background: url("../../img/advantage-dining@1x.png") no-repeat center,
+      linear-gradient(to right, @greenBgColor, @greenBgColor);
   }
 }
 
 .features__item--clock {
   &::before {
-    background: url(../../img/advantage-clock@1x.png) no-repeat center,
-    linear-gradient(to right, @green-bg-color, @green-bg-color);
+    background: url("../../img/advantage-clock@1x.png") no-repeat center,
+      linear-gradient(to right, @greenBgColor, @greenBgColor);
   }
 }
