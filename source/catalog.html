@@ -3,21 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="page-header__logo">
+      <a class="page-header__logo">
         <img
-          src="https://via.placeholder.com/50x40"
-          width="50"
-          height="40"
+          src="img/logo-mobile.svg"
+          width="191"
+          height="39"
           alt="Лого Cat Energy"
           class="page-header__logo-img"
         >
       </a>
+
       <nav class="page-header__nav main-nav">
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="main-nav__burger">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -36,13 +38,13 @@
     <main class="page-catalog">
       <h1 class="page-catalog__title">Каталог продукции</h1>
 
-      <section class="catalog">
+      <section class="goods-catalog">
         <h2 class="visually-hidden">Список товаров каталога</h2>
-        <ul class="catalog__list">
-          <li class="catalog__item good">
+        <ul class="goods-catalog__list">
+          <li class="goods-catalog__item good">
             <div class="good__info">
               <img
-                src="https://via.placeholder.com/140x140"
+                src="img/chicken-small-mobile@2x.jpg"
                 width="140"
                 height="140"
                 alt="Cat Energy PRO 500g. (chicken)"
@@ -69,17 +71,17 @@
             <a href="#" class="good__order button">Заказать</a>
           </li>
 
-          <li class="catalog__item good">
+          <li class="goods-catalog__item good">
             <div class="good__info">
               <img
-                src="https://via.placeholder.com/140x140"
+                src="img/chicken-big-mobile@2x.jpg"
                 width="140"
                 height="140"
                 alt="Cat Energy PRO 1000g. (chicken)"
                 class="good__image"
               >
               <table class="good__characteristics">
-                <caption class="good__title">Cat Energy PRO 1000 г</caption>
+                <caption class="good__title">Cat Energy<br>PRO 1000 г</caption>
 
                 <tr>
                   <td class="good__characteristic">Объем</td>
@@ -99,10 +101,10 @@
             <a href="#" class="good__order button">Заказать</a>
           </li>
 
-          <li class="catalog__item good">
+          <li class="goods-catalog__item good">
             <div class="good__info">
               <img
-                src="https://via.placeholder.com/140x140"
+                src="img/fish-small-mobile@2x.jpg"
                 width="140"
                 height="140"
                 alt="Cat Energy PRO 500g. (fish)"
@@ -129,10 +131,10 @@
             <a href="#" class="good__order button">Заказать</a>
           </li>
 
-          <li class="catalog__item good">
+          <li class="goods-catalog__item good">
             <div class="good__info">
               <img
-                src="https://via.placeholder.com/140x140"
+                src="img/fish-big-mobile@2x.jpg"
                 width="140"
                 height="140"
                 alt="Cat Energy PRO 1000g. (chicken)"
@@ -159,10 +161,10 @@
             <a href="#" class="good__order button">Заказать</a>
           </li>
 
-          <li class="catalog__item good">
+          <li class="goods-catalog__item good">
             <div class="good__info">
               <img
-                src="https://via.placeholder.com/140x140"
+                src="img/buckwheat-small-mobile@2x.jpg"
                 width="140"
                 height="140"
                 alt="Cat Energy Slim 500g. (buckwheat)"
@@ -189,13 +191,13 @@
             <a href="#" class="good__order button">Заказать</a>
           </li>
 
-          <li class="catalog__item good">
+          <li class="goods-catalog__item good">
             <div class="good__info">
               <img
-                src="https://via.placeholder.com/140x140"
+                src="img/buckwheat-big-mobile@2x.jpg"
                 width="140"
                 height="140"
-                alt="Cat Energy Slim 500g. (buckwheat)"
+                alt="Cat Energy Slim 1000g. (buckwheat)"
                 class="good__image"
               >
               <table class="good__characteristics">
@@ -219,10 +221,10 @@
             <a href="#" class="good__order button">Заказать</a>
           </li>
 
-          <li class="catalog__item good">
+          <li class="goods-catalog__item good">
             <div class="good__info">
               <img
-                src="https://via.placeholder.com/140x140"
+                src="img/rice-small-mobile@2x.jpg"
                 width="140"
                 height="140"
                 alt="Cat Energy Slim 500g. (rice)"
@@ -249,10 +251,10 @@
             <a href="#" class="good__order button">Заказать</a>
           </li>
 
-          <li class="catalog__item all-goods">
+          <li class="goods-catalog__item all-goods">
             <p class="all-goods__title">Показать еще 100500 товаров</p>
             <p class="all-goods__message">На самом деле вкусов гораздо больше!</p>
-            <a href="#" class="all-goods__show button">Показать все</a>
+            <a href="#" class="all-goods__show button button--default">Показать все</a>
           </li>
         </ul>
       </section>
@@ -262,8 +264,8 @@
           Дополнительные товары
         </h2>
 
-        <table class="additional-catalog__list">
-          <tr class="additional-catalog__item additional-good">
+        <table class="additional-goods-catalog__list">
+          <tr class="additional-goods-catalog__item additional-good">
             <td class="additional-good__name">Сахарозаменитель</td>
             <td class="additional-good__quantity">1 упаковка (100 г)</td>
             <td class="additional-good__cost">200 Р.</td>
@@ -271,7 +273,7 @@
               <a href="#" class="additional-good__button button">Заказать</a>
             </td>
           </tr>
-          <tr class="additional-catalog__item additional-good">
+          <tr class="additional-goods-catalog__item additional-good">
             <td class="additional-good__name">Питьевая вода</td>
             <td class="additional-good__quantity">5 литров</td>
             <td class="additional-good__cost">50 Р.</td>
@@ -279,7 +281,7 @@
               <a href="#" class="additional-good__button button">Заказать</a>
             </td>
           </tr>
-          <tr class="additional-catalog__item additional-good">
+          <tr class="additional-goods-catalog__item additional-good">
             <td class="additional-good__name">Молоко</td>
             <td class="additional-good__quantity">1 литр</td>
             <td class="additional-good__cost">100 Р.</td>
@@ -287,7 +289,7 @@
               <a href="#" class="additional-good__button button">Заказать</a>
             </td>
           </tr>
-          <tr class="additional-catalog__item additional-good">
+          <tr class="additional-goods-catalog__item additional-good">
             <td class="additional-good__name">Витамины</td>
             <td class="additional-good__quantity">1 упаковка (30 г)</td>
             <td class="additional-good__cost">300 Р.</td>
@@ -339,9 +341,9 @@
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <img
-          src="https://via.placeholder.com/128x24"
+          src="img/logo-footer.svg"
           width="128"
           height="24"
           alt="Лого Cat Energy"
@@ -364,11 +366,11 @@
         </ul>
       </div>
 
-      <div class="page-footer__copyright copyright">
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          HTML Academy
-        </a>
-      </div>
+      <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        HTML Academy
+      </a>
     </footer>
+
+    <script src="js/burger-menu.js"></script>
   </body>
 </html>

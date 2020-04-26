@@ -1,0 +1,36 @@
+@plusIconSize: 31px;
+@plusMarginTop: 27px;
+@plusMarginBottom: 25px;
+
+.all-goods {
+  position: relative;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: @plusMarginTop;
+    left: calc((100% - @plusIconSize) / 2);
+    width: @plusIconSize;
+    height: @plusIconSize;
+    background: url("../../img/icon-plus-mobile.svg");
+    opacity: 0.2;
+  }
+}
+
+.all-goods__show {
+  width: @mobileContentWidth;
+  margin: 0 auto;
+}
+
+.all-goods__title {
+  margin-top: @plusIconSize + @plusMarginTop + @plusMarginBottom;
+
+  font-size: 16px;
+  text-transform: uppercase;
+  color: @blackColor;
+}
+
+.all-goods__message {
+  font-size: 12px;
+}

@@ -1,0 +1,26 @@
+.catalogs__list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .clear-ul-styles();
+}
+
+.catalogs__item {
+  position: relative;
+  width: @mobileContentWidth;
+  margin-bottom: 20px;
+  padding: 22px 20px;
+  background-color: @lightGrayColor;
+}
+
+@media (min-width: 600px) {
+  .catalogs__list {
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .catalogs__item {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
