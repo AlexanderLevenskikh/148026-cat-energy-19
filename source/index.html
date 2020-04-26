@@ -114,7 +114,7 @@
               5 кг
             </p>
           </li>
-          <li class="story__result result">
+          <li class="story__result result result--inline">
             <p class="result__type">
               Затраты на питание
             </p>
@@ -125,26 +125,36 @@
         </ul>
 
         <div class="story__illustration">
-          <img
-            src="https://via.placeholder.com/311x232"
-            width="311"
-            height="232"
-            alt="До корма Cat Energy"
-            class="story__img-before"
-          >
-          <img
-            src="https://via.placeholder.com/311x232"
-            width="311"
-            height="232"
-            alt="После корма Cat Energy"
-            class="story__img-after"
-          >
+          <div class="story__img-wrapper">
+            <div class="story__img-before-wrapper">
+              <img
+                src="img/before-mobile@2x.png"
+                width="311"
+                height="232"
+                alt="До корма Cat Energy"
+                class="story__img-before"
+                id="story-before"
+              >
+            </div>
+            <div class="story__img-after-wrapper">
+              <img
+                src="img/after-mobile@2x.png"
+                width="311"
+                height="232"
+                alt="После корма Cat Energy"
+                class="story__img-after"
+                id="story-after"
+              >
+            </div>
+          </div>
 
           <div class="story__range-wrapper range">
             <button class="range__button range__button--before">
               Было
             </button>
-            <input type="range" min="1" max="100" step="0.01" class="range__slider">
+            <div class="range__slider">
+              <input type="range" min="1" max="100" step="0.01" class="range__input">
+            </div>
             <button class="range__button range__button--after">
               Стало
             </button>
@@ -165,17 +175,19 @@
         </div>
 
         <div class="location__map map">
-          <div class="map__pin">
-            Место на карте
+          <div class="map__wrapper">
+            <div class="map__pin">
+              Место на карте
+            </div>
+            <img
+              src="img/bg-map-mobile@2x.png"
+              alt="Карта"
+              width="320"
+              height="370"
+              class="map__img"
+            >
           </div>
         </div>
-        <img
-          src="https://via.placeholder.com/320x370"
-          alt="Карта"
-          width="320"
-          height="370"
-          class="map__img"
-        >
       </section>
     </main>
 
