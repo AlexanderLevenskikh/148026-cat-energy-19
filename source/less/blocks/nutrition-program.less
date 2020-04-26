@@ -1,10 +1,9 @@
-@import "../variables";
-
 .nutrition-program__cat-bg {
   position: relative;
   margin-bottom: 200px;
   padding-bottom: 150px;
   background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-color: #63a73a;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -39,16 +38,4 @@
   bottom: calc(-50% - 30px);
   left: calc((100% - @mobileContentWidth) / 2);
   width: @mobileContentWidth;
-}
-
-@media (min-width: 320px) {
-  .nutrition-program__cat-bg {
-    margin-bottom: calc(50% + 40px);
-    padding-bottom: calc(100% - 170px);
-    background-image: url("../../img/index-background-mobile@2x.jpg");
-  }
-
-  .nutrition-program__image {
-    width: calc(100% - 40px);
-  }
 }

@@ -1,8 +1,5 @@
-@import "../variables";
-@import "../mixins";
-
 .features__list {
-  .clear-styles("ul");
+  .clear-ul-styles();
 }
 
 .features__title {
@@ -20,7 +17,6 @@
   min-height: @feature-square-size;
   margin: 20px;
   padding-left: @feature-square-size + 20px;
-  font-family: "Arial", "Tahoma", sans-serif;
 
   &::before {
     content: "";
