@@ -1,0 +1,123 @@
+.button {
+  .clear-button-styles();
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background: @greenBgColor;
+  min-width: 150px;
+  color: @whiteColor;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &--default {
+    background-color: @lightGrayColor;
+    color: @defaultFontColor;
+  }
+}
+
+.textarea,
+.input {
+  padding: 10px 14px;
+  font: inherit;
+  color: #444444;
+  border: 1px solid @inputDefault;
+  outline: none;
+
+  &:active,
+  &:focus {
+    border-color: @inputActive;
+  }
+
+  &--error {
+    border-color: @inputError;
+  }
+}
+
+.radio-button {
+  position: absolute;
+  left: -9999px;
+
+  &:checked + label::after {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.radio-button + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  line-height: 25px;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    border: 1px solid @inputDefault;
+    border-radius: 100%;
+    background: @whiteColor;
+  }
+
+  &::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: @greenBgColor;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    border-radius: 100%;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.2s ease;
+  }
+}
+
+.checkbox {
+  position: absolute;
+  left: -9999px;
+
+  &:checked + label::after {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.checkbox + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  line-height: 25px;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    border: 1px solid @inputDefault;
+    background: @whiteColor;
+  }
+
+  &::after {
+    content: "";
+    background-image: url("../img/icon-tick.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.2s ease;
+  }
+}

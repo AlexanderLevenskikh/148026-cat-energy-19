@@ -1,0 +1,90 @@
+.form__action {
+  margin: 20px;
+  max-width: 230px;
+}
+
+.form__fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+
+  &--bordered {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid @lightGrayColor;
+  }
+}
+
+.form__row {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 8px;
+}
+
+.form__label {
+  padding-right: 13px;
+}
+
+.form__submit {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.form__legend {
+  display: table;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  + * {
+    clear: both;
+  }
+}
+
+.form__textarea,
+.form__input {
+  flex-grow: 1;
+}
+
+.form__subtitle {
+  display: inline-block;
+}
+
+.form__cat-owner-contacts {
+  .form__subtitle {
+    max-width: calc(100% - 100px);
+  }
+
+  .form__legend {
+    .subtitle(100px);
+  }
+}
+
+.form__comment {
+  .form__subtitle {
+    max-width: calc(100% - 158px);
+  }
+
+  .form__legend {
+    .subtitle(158px);
+  }
+}
+
+.form__additional {
+  .form__subtitle {
+    max-width: calc(100% - 136px);
+  }
+
+  .form__legend {
+    .subtitle(136px);
+  }
+}
+
+.form__required-fields-label {
+  margin-bottom: 35px;
+  text-align: center;
+}
