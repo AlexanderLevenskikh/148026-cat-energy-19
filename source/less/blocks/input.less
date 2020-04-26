@@ -1,0 +1,16 @@
+.input {
+  padding: 10px 14px;
+  font: inherit;
+  color: #444444;
+  border: 1px solid @inputDefault;
+  outline: none;
+
+  &:active,
+  &:focus {
+    border-color: @inputActive;
+  }
+
+  &--error {
+    border-color: @inputError;
+  }
+}

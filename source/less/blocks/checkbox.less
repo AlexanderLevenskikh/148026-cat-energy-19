@@ -1,0 +1,43 @@
+.checkbox {
+  position: absolute;
+  left: -9999px;
+
+  &:checked + label::after {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.checkbox + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  line-height: 25px;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    border: 1px solid @inputDefault;
+    background: @whiteColor;
+  }
+
+  &::after {
+    content: "";
+    background-image: url("../img/icon-tick.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.2s ease;
+  }
+}
